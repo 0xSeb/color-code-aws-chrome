@@ -1,4 +1,4 @@
-# Color coding env aws Chrome extension
+# Color coding env AWS Chrome extension
 
 This Chrome extension has for purpose to color code differents environnements in the AWS console based on the account number.
 
