@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+   
+    "name": "Color-code-aws",
+    "version": "1.0",
+    "description": "Color coding pro account on AWS",
+   
+    "content_scripts": [{
+      "web_accessible_resources": ["suslogo.png"],
+      "js": ["main.js"],
+      "matches": [ "*://*/*" ],
+      "include_globs": [
+          "*://console.aws.amazon.com/*",
+          "*://*.console.aws.amazon.com/*"
+      ]
+    }],
+    "web_accessible_resources": [
+        "suslogo.png"
+    ]
+   
+  }
