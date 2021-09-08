@@ -2,6 +2,7 @@
 
 This extension has for purpose to color code differents environnements in the AWS console based on the account number.
 
+![accounts aws color coded](accounts.png)
 ## Why ? 
 
 * Once you mess up accounts between prod and stage, you don't it to happen ever again.
@@ -11,4 +12,4 @@ This extension has for purpose to color code differents environnements in the AW
 
 Copy the *main.dist.js* file to *main.js*, replace the account numbers, colors, etc.
 
-[Load the folder color-code-aws in Chrome]('https://developer.chrome.com/docs/extensions/mv3/getstarted/#manifest')
+[Load the folder color-code-aws in Chrome](https://developer.chrome.com/docs/extensions/mv3/getstarted/#manifest)
