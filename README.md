@@ -5,7 +5,7 @@ This Chrome extension has for purpose to color code differents environnements in
 ![accounts aws color coded](accounts.png)
 ## Why ? 
 
-* Once you mess up accounts between prod and stage, you don't it to happen ever again.
+* Once you mess up accounts between prod and stage, you don't want it to happen ever again.
 * The account numbers are usually very similar and if you don't pay attention or switch envs frequently, it's easy to lose track of which env you're actually in.
 
 # How to use it
