@@ -3,19 +3,19 @@ const prodAccount = {
     title: '⚠️ PROD AWS',
     color: 'red',
     warningMessage: '⚠️ THIS IS PROD'
-  } 
-  
+  }
+
   const stageAccount = {
       number: '<account-number>',
       title: 'ℹ️ STAGE AWS',
       color: 'forestgreen',
       warningMessage: 'ℹ️ THIS IS STAGE'
-  } 
-  
+  }
+
   const accounts = [prodAccount, stageAccount]
-  
+
   init();
-  
+
   function init() {
       const currentAccountNumber = document.querySelector('[data-testid="awsc-nav-account-menu-button"]').children[0].title;
       const header = document.querySelector('[data-testid="awsc-nav-header-viewport-shelf-inner"]');
@@ -26,8 +26,8 @@ const prodAccount = {
       const logoAWS = document.querySelector('[data-testid="nav-logo"]');
       const susLogo = document.createElement("img");
       susLogo.src = chrome.runtime.getURL('suslogo.png');
-      susLogo.height = 20;
-  
+      susLogo.setAttribute('style', 'max-height: 20px');
+
       const isCurrentAccount = (element) => currentAccountNumber.includes(element.number);
       const accountIndex = accounts.findIndex(isCurrentAccount);
       if(accountIndex > -1){
@@ -41,6 +41,6 @@ const prodAccount = {
               logoAWS.children[0].remove();
               logoAWS.appendChild(susLogo);
           }
-          
+
       }
   }
